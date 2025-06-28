@@ -1,35 +1,120 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/img/4geeks.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Venta de Dominios</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <!-- Fontawesome is our recomended library for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar bg-dark border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png"
+          alt="Logo" width="40" height="40" class="d-inline-block align-text-center" style="color: white;">
+        Ventas de Dominios
+      </a>
     </div>
+  </nav>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
+<!--textos de arriba-->
+<div id="TextPrincipal"> 
+  <h1>Venta de dominios</h1>
+</div>
+
+  <!-- Use chat gpt para el tema de los botones ya que consegui una pagina donde me daba los botones pero no tenia los estilos que queria como tal entonces le pedi a chat gpt que me los cambiara un poco para que estuviera relacionado con lo que queria https://uiverse.io/0xnihilism/quiet-dog-6 ese es el link del boton -->
+<!-- Contenedor de botones principales -->
+<div class="button-container">
+  <!-- Botón .com -->
+  <button class="brutalist-button">
+    <div class="logo-circle">
+      <!-- Puedes cambiar el SVG por uno relacionado con .com -->
+      <svg viewBox="0 0 24 24" class="icon">
+        <circle cx="12" cy="12" r="10" />
+      </svg>
+    </div>
+    <div class="button-text">.com</div>
+  </button>
+
+  <!-- Botón .net -->
+  <button class="brutalist-button">
+    <div class="logo-circle">
+      <svg viewBox="0 0 24 24" class="icon">
+        <rect x="4" y="4" width="16" height="16" />
+      </svg>
+    </div>
+    <div class="button-text">.net</div>
+  </button>
+
+  <!-- Botón .io -->
+  <button class="brutalist-button">
+    <div class="logo-circle">
+      <svg viewBox="0 0 24 24" class="icon">
+        <polygon points="12,2 22,22 2,22" />
+      </svg>
+    </div>
+    <div class="button-text">.io</div>
+  </button>
+
+  <!-- Botón .es -->
+  <button class="brutalist-button">
+    <div class="logo-circle">
+      <svg viewBox="0 0 24 24" class="icon">
+        <path d="M4 4h16v16H4z" />
+      </svg>
+    </div>
+    <div class="button-text">.es</div>
+  </button>
+
+  <!-- Botón .us -->
+  <button class="brutalist-button">
+    <div class="logo-circle">
+      <svg viewBox="0 0 24 24" class="icon">
+        <path d="M12 2 L19 21 H5 Z" />
+      </svg>
+    </div>
+    <div class="button-text">.us</div>
+  </button>
+
+  <!-- Botón .org -->
+  <button class="brutalist-button">
+    <div class="logo-circle">
+      <svg viewBox="0 0 24 24" class="icon">
+        <circle cx="12" cy="12" r="6" />
+      </svg>
+    </div>
+    <div class="button-text">.org</div>
+  </button>
+</div>
+
+<!-- Botón de crear extensión -->
+<div class="create-extension">
+  <button class="brutalist-button">
+    <div class="logo-circle">
+      <svg viewBox="0 0 24 24" class="icon">
+        <path d="M12 5v14M5 12h14" stroke="white" stroke-width="2" fill="none" />
+      </svg>
+    </div>
+    <div class="button-text">Crear Extensión</div>
+  </button>
+</div>
+
+
+
+
+  <script type="module" src="/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
