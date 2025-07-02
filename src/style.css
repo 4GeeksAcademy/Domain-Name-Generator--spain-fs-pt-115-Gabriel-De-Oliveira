@@ -1,17 +1,24 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: white;
+   background: #991717;
+   background: linear-gradient(90deg, rgba(153, 23, 23, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(153, 23, 23, 1) 100%);
 }
 
-#TextPrincipal{
-    color: black;
-    padding-top: 5%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 5%;
+
+.loading-text {
+  width: 100%;                 
+  white-space: nowrap;       
+  text-align: center;         
+  margin: 0 auto;            
+  background: linear-gradient(90deg, rgb(94, 68, 9), rgb(218, 124, 24), rgb(179, 79, 21)) -100% / 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font: 900 clamp(2em, 10vw, 10em) 'Exo', sans-serif;
+  animation: shimmer 2s linear infinite;
 }
+
 
 /* Contenedor general para los botones */
 .button-container {
@@ -46,7 +53,7 @@ body{
 .logo-circle {
   width: 70px;
   height: 70px;
-  background-color: black;
+  background-color: white;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -59,7 +66,7 @@ body{
 .logo-circle svg {
   width: 38px;
   height: 38px;
-  fill: white;
+  fill: black;
   transition: transform 0.3s ease;
 }
 
@@ -101,10 +108,18 @@ body{
   }
 }
 
-/* Separación para el botón extra */
+
 .create-extension {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 30px;
 }
+
+#resultados {
+  background: #FF0000;
+  background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(153, 23, 23, 1) 50%, rgba(255, 0, 0, 1) 100%);
+  padding: 1%;
+  margin-bottom: 2%;
+}
+
